@@ -57,7 +57,7 @@ example("hexbin_map")
 ### For Free Users:
 
 Please change the variables for yours;
-
+```
 url <- "https://glad.umd.edu/users/Potapov/GLCLUC2020/Built-up_change_2000_2020/"
 #If your city is in the intersection, you can type more than one tile name, the function will merge it for you. ex. c("50N_020E","50N_030E") 
 lat_lon_list <- c("50N_020E") 
@@ -95,5 +95,5 @@ city_map_boundaries <- create_map(city_df_boundaries, city_roads_inside_boundari
 
 hex_map_polygon <- hexbin_map(city_df_boundaries,15,"Building Desinty, Pixel-Based Analysis")
 hex_map_buffer <- hexbin_map(city_df_buffer,15,"Building Desinty, Pixel-Based Analysis")
-
+```
 
