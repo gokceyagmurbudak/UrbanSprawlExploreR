@@ -1,13 +1,13 @@
 # UrbanSprawlExploreR
 
-#### Install the library 
+### Install the library 
 
 Please use the commands below;
 ```
 library(devtools)
 install_github("gokceyagmurbudak/UrbanSprawlExploreR")
 ```
-#### Operations
+### Operations
 
 **Please run all functions in this order;**
 
