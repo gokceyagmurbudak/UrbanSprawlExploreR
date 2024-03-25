@@ -15,7 +15,9 @@ Calling library and dataset;
 ```
 library(UrbanSprawlExploreR)
 ```
+```
 example("fetch_builtup_data")
+```
 ```
 example("get_city_boundaries")
 ```
@@ -23,6 +25,8 @@ example("get_city_boundaries")
 Cropping the built--up raster images according to the boundaries or buffer (circle or square) of relevant city;
 ```
 example("crop_raster_by_boundaries")
+```
+```
 example("crop_raster_by_buffer")
 ```
 
@@ -34,6 +38,8 @@ example("raster_to_df")
 Calling the road dataset from OSM to crop roads within the city;
 ```
 example("city_osm_roads")
+```
+```
 example("crop_city_roads")
 ```
 
