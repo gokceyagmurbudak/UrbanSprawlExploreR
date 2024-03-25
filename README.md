@@ -1,7 +1,7 @@
 # UrbanSprawlExploreR
 
 This package use [Global Land Cover and Land Use Change, 2000-2020 dataset](https://glad.umd.edu/dataset/GLCLUC2020) to generate built-up change and new building density map.
-Before you start using the package, check which tile your work area falls on with QGIS software [here](https://glad.umd.edu/users/Potapov/GLCLUC2020/10d_tiles.zip).
+Before you start using the package, check which tile your study area falls on with QGIS software [here](https://glad.umd.edu/users/Potapov/GLCLUC2020/10d_tiles.zip).
 
 ### Install the library 
 
@@ -59,7 +59,7 @@ example("hexbin_map")
 Please change the variables for yours;
 
 url <- "https://glad.umd.edu/users/Potapov/GLCLUC2020/Built-up_change_2000_2020/"
-#If your field is in the intersection, you can type more than one tile name, the function will merge it for you. ex. c("50N_020E","50N_030E") 
+#If your city is in the intersection, you can type more than one tile name, the function will merge it for you. ex. c("50N_020E","50N_030E") 
 lat_lon_list <- c("50N_020E") 
 crsLONGLAT <- "+proj=longlat +ellps=WGS84 +towgs84=0,0,0,0,0,0,0 +no_defs"
 builtup_raster_data <- fetch_builtup_data(url, lat_lon_list, crsLONGLAT)
