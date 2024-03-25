@@ -56,7 +56,8 @@ example("hexbin_map")
 
 ### For Free Users:
 
-Please change the variables for yours;
+Please change the variables for your useage;
+
 ```
 url <- "https://glad.umd.edu/users/Potapov/GLCLUC2020/Built-up_change_2000_2020/"
 #If your city is in the intersection, you can type more than one tile name, the function will merge it for you. ex. c("50N_020E","50N_030E") 
