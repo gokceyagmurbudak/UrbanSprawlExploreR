@@ -1,5 +1,8 @@
 # UrbanSprawlExploreR
 
+This package use [Global Land Cover and Land Use Change, 2000-2020 dataset](https://glad.umd.edu/dataset/GLCLUC2020) to generate built-up change and new building density map.
+Before you start using the package, check which tile your work area falls on with QGIS software [here](https://glad.umd.edu/users/Potapov/GLCLUC2020/10d_tiles.zip).
+
 ### Install the library 
 
 Please use the commands below;
@@ -50,3 +53,47 @@ example("create_map")
 ```
 example("hexbin_map")
 ```
+
+### For Free Users:
+
+Please change the variables for yours;
+
+url <- "https://glad.umd.edu/users/Potapov/GLCLUC2020/Built-up_change_2000_2020/"
+#If your field is in the intersection, you can type more than one tile name, the function will merge it for you. ex. c("50N_020E","50N_030E") 
+lat_lon_list <- c("50N_020E") 
+crsLONGLAT <- "+proj=longlat +ellps=WGS84 +towgs84=0,0,0,0,0,0,0 +no_defs"
+builtup_raster_data <- fetch_builtup_data(url, lat_lon_list, crsLONGLAT)
+
+city <- "Istanbul"
+city_border_osm <- get_city_boundaries(city, builtup_raster_data, crsLONGLAT)
+crop_raster_by_boundaries<- crop_raster_by_boundaries(builtup_raster_data, city_border_osm)
+
+buffer_size <- 30
+buffer_shape <- "square" # or circle
+crop_raster_by_buffer <- crop_raster_by_buffer(city_border_osm, buffer_size, buffer_shape, builtup_raster_data)
+
+city_df_boundaries <- raster_to_df(crop_raster_by_boundaries)
+city_df_buffer <- raster_to_df(crop_raster_by_buffer$raster_masked)
+
+road_tags <- c("motorway", "trunk", "primary", "secondary",
+"tertiary", "motorway_link", "trunk_link",
+"primary_link", "secondary_link", "tertiary_link")
+
+city_roads <- city_osm_roads(city_border_osm, road_tags, crsLONGLAT)
+
+city_roads_inside_buffer <- crop_city_roads(city_roads,crop_raster_by_buffer$buffer_polygon)
+city_roads_inside_boundaries <- crop_city_roads(city_roads,city_border_osm)
+
+city_map_buffer <- create_map(city_df_buffer, city_roads_inside_buffer, "Istanbul Urban Expansion","Created by <name>")
+city_map_boundaries <- create_map(city_df_boundaries, city_roads_inside_boundaries, "Istanbul Urban Expansion","Created by <name>")
+
+#ggsave(
+#filename = "built_up.png",
+#width = 6, height = 6, dpi = 600,
+#device = "png", city_map_boundaries #city_map_buffer
+#)
+
+hex_map_polygon <- hexbin_map(city_df_boundaries,15,"Building Desinty, Pixel-Based Analysis")
+hex_map_buffer <- hexbin_map(city_df_buffer,15,"Building Desinty, Pixel-Based Analysis")
+
+
