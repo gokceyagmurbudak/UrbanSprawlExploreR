@@ -1,0 +1,20 @@
+Package: UrbanSprawlExploreR
+Title: Mapping Urban Sprawl and Density of New Buildings (Global Land Cover and Land Use Change Dataset, 2000-2020)
+Version: 0.0.0.9000
+Authors@R: 
+    person("Gökçe", "Budak", , "goekce.budak@stud-mail.uni-wuerzburg.de", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Using the Global Built-up Lands Extent and Change dataset for the years 2000-2020, maps were created at different extents for cities and the densities of newly constructed buildings were visualised.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.0
+Imports: 
+    ggplot2,
+    httr,
+    osmdata,
+    sf,
+    terra,
+    tidyverse,
+    viridis,
+    XML
