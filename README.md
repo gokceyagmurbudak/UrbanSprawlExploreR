@@ -56,7 +56,7 @@ example("hexbin_map")
 
 ### For Free Users:
 
-Please change the variables for your useage;
+Please change the variables for your usage;
 
 ```
 url <- "https://glad.umd.edu/users/Potapov/GLCLUC2020/Built-up_change_2000_2020/"
