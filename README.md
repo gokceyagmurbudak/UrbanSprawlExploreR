@@ -46,5 +46,7 @@ example("crop_city_roads")
 Create a visual map and hexagon bining denstiy map for relevant city;
 ```
 example("create_map")
+```
+```
 example("hexbin_map")
 ```
