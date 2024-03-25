@@ -14,7 +14,9 @@ install_github("gokceyagmurbudak/UrbanSprawlExploreR")
 Calling library and dataset;
 ```
 library(UrbanSprawlExploreR)
+```
 example("fetch_builtup_data")
+```
 example("get_city_boundaries")
 ```
 
