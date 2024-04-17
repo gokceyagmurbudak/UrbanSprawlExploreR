@@ -59,6 +59,13 @@ example("create_map")
 ```
 example("hexbin_map")
 ```
+<a href="https://drive.google.com/uc?export=view&id=1TSmbA3UMQY6wIWtg8ubxEAxr4ojin3-l"><img src="https://drive.google.com/uc?export=view&id=1TSmbA3UMQY6wIWtg8ubxEAxr4ojin3-l" style="width: 500px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=14Yctwqk_qYGOcWxMcbtVSjKiPGNaohAq"><img src="https://drive.google.com/uc?export=view&id=14Yctwqk_qYGOcWxMcbtVSjKiPGNaohAq" style="width: 500px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
+Show all outputs on the dashboard and set the number of bin for hexagon_map;
+```
+example("UrbanExpansionUI")
+```
+<a href="https://drive.google.com/uc?export=view&id=1RvM3zY6sDTSrYhlFcIU-HFOXRGPKqsip"><img src="https://drive.google.com/uc?export=view&id=1RvM3zY6sDTSrYhlFcIU-HFOXRGPKqsip" style="width: 500px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=1oSRcHbMv8RMpnNaJihNKHXZqJNPjSD0u"><img src="https://drive.google.com/uc?export=view&id=1oSRcHbMv8RMpnNaJihNKHXZqJNPjSD0u" style="width: 500px; max-width: 100%; height: auto" title="Click to enlarge picture" /><a href="https://drive.google.com/uc?export=view&id=163DSrCCE7jc1GYt2yUFKRa7LMHNSaePC"><img src="https://drive.google.com/uc?export=view&id=163DSrCCE7jc1GYt2yUFKRa7LMHNSaePC" style="width: 500px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=14E8MdrGHLHEEygalVT4VtU82KPo09d_y"><img src="https://drive.google.com/uc?export=view&id=14E8MdrGHLHEEygalVT4VtU82KPo09d_y" style="width: 500px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 ### For Free Users:
 
