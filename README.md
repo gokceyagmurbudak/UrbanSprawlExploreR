@@ -38,6 +38,7 @@ example("crop_raster_by_boundaries")
 example("crop_raster_by_buffer")
 ```
 <a href="https://drive.google.com/uc?export=view&id=1Kz9atlKjQJwsmj5HeHo4873ymgrNxH4K"><img src="https://drive.google.com/uc?export=view&id=1Kz9atlKjQJwsmj5HeHo4873ymgrNxH4K" style="width: 500px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
 Convert built-up raster image to dataframe to generate labels as characters;
 ```
 example("raster_to_df")
