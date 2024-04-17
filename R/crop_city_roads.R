@@ -1,23 +1,34 @@
 #' Crop City Roads
 #'
-#' This function crops the specified city roads dataset based on the provided boundary, buffer or spatial object.
+#' This function crops city roads based on specified road tags and a cropping method.
 #'
-#' @param city_roads A spatial object containing the city roads dataset.
-#' @param cropped_method  A spatial object representing the boundary or area to crop the city roads dataset.
+#' @param road_tags A character vector specifying the types of roads to include.
+#' @param cropped_method An object representing the method used for cropping the roads.
+#' @param crsLONGLAT The coordinate reference system (CRS) for the output roads.
 #'
-#' @return A spatial object containing the cropped city roads dataset.
-#'
-#' @details This function intersects the city roads dataset with the specified boundary or area to crop the roads within that boundary.
-#'
+#' @return An sf object representing the cropped city roads.
 #' @export
 #'
-#' @import sf ggplot2
-#'
 #' @examples
-#' city_roads_inside_buffer <- crop_city_roads(city_roads,crop_raster_by_buffer$buffer_polygon)
-#' city_roads_inside_boundaries <- crop_city_roads(city_roads,city_border_osm)
+#' road_tags <- c("motorway", "trunk", "primary", "secondary",
+#' "tertiary", "motorway_link", "trunk_link",
+#' "primary_link", "secondary_link", "tertiary_link")
+#'
+#' city_roads_inside_buffer <- crop_city_roads(road_tags,crop_raster_buffer$buffer_polygon, crsLONGLAT)
+#' city_roads_inside_boundaries <- crop_city_roads(road_tags,city_border_osm,crsLONGLAT)
 
-crop_city_roads <- function(city_roads, cropped_method) {
+crop_city_roads <- function(road_tags,cropped_method,crsLONGLAT) {
+  roads <- sf::st_bbox(cropped_method) |>
+    osmdata::opq() |>
+    osmdata::add_osm_feature(
+      key = "highway",
+      value = road_tags
+    ) |>
+    osmdata::osmdata_sf()
+
+  city_roads <- roads$osm_lines |>
+    sf::st_transform(crs = crsLONGLAT)
+
   roads_cropped <- sf::st_intersection(city_roads, cropped_method)
 
   p <- ggplot() +

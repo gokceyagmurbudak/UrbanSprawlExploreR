@@ -4,23 +4,26 @@
 \alias{crop_city_roads}
 \title{Crop City Roads}
 \usage{
-crop_city_roads(city_roads, cropped_method)
+crop_city_roads(road_tags, cropped_method, crsLONGLAT)
 }
 \arguments{
-\item{city_roads}{A spatial object containing the city roads dataset.}
+\item{road_tags}{A character vector specifying the types of roads to include.}
 
-\item{cropped_method}{A spatial object representing the boundary or area to crop the city roads dataset.}
+\item{cropped_method}{An object representing the method used for cropping the roads.}
+
+\item{crsLONGLAT}{The coordinate reference system (CRS) for the output roads.}
 }
 \value{
-A spatial object containing the cropped city roads dataset.
+An sf object representing the cropped city roads.
 }
 \description{
-This function crops the specified city roads dataset based on the provided boundary, buffer or spatial object.
-}
-\details{
-This function intersects the city roads dataset with the specified boundary or area to crop the roads within that boundary.
+This function crops city roads based on specified road tags and a cropping method.
 }
 \examples{
-city_roads_inside_buffer <- crop_city_roads(city_roads,crop_raster_by_buffer$buffer_polygon)
-city_roads_inside_boundaries <- crop_city_roads(city_roads,city_border_osm)
+road_tags <- c("motorway", "trunk", "primary", "secondary",
+"tertiary", "motorway_link", "trunk_link",
+"primary_link", "secondary_link", "tertiary_link")
+
+city_roads_inside_buffer <- crop_city_roads(road_tags,crop_raster_buffer$buffer_polygon, crsLONGLAT)
+city_roads_inside_boundaries <- crop_city_roads(road_tags,city_border_osm,crsLONGLAT)
 }

@@ -18,5 +18,5 @@ A cropped raster object with the specified boundaries.
 This function crops a raster data using the boundaries defined by a polygon.
 }
 \examples{
-crop_raster_by_boundaries<- crop_raster_by_boundaries(builtup_raster_data, city_border_osm)
+crop_raster_boundaries<- crop_raster_by_boundaries(builtup_raster_data, city_border_osm)
 }
