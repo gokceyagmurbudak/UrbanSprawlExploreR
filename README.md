@@ -21,6 +21,8 @@ library(UrbanSprawlExploreR)
 ```
 example("fetch_builtup_data")
 ```
+<a href="https://drive.google.com/uc?export=view&id=1C1mROUeTyEOI5p2fIYJDJpHFvYzSIoXc"><img src="https://drive.google.com/uc?export=view&id=1C1mROUeTyEOI5p2fIYJDJpHFvYzSIoXc" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
 ```
 example("get_city_boundaries")
 ```
