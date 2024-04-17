@@ -46,12 +46,9 @@ example("raster_to_df")
 
 Calling the road dataset from OSM to crop roads within the city;
 ```
-example("city_osm_roads")
-```
-```
 example("crop_city_roads")
 ```
-
+<a href="https://drive.google.com/uc?export=view&id=1pUb6OTzqexxwNK318_PwjnPi3e2N6sN9"><img src="https://drive.google.com/uc?export=view&id=1pUb6OTzqexxwNK318_PwjnPi3e2N6sN9" style="width: 500px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=1ag2mE8VHN0TgzYs8oLvFVQVhNaD40c6e"><img src="https://drive.google.com/uc?export=view&id=1ag2mE8VHN0TgzYs8oLvFVQVhNaD40c6e" style="width: 500px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 Create a visual map and hexagon bining denstiy map for relevant city;
 ```
 example("create_map")
