@@ -21,23 +21,23 @@ library(UrbanSprawlExploreR)
 ```
 example("fetch_builtup_data")
 ```
-<a href="https://drive.google.com/uc?export=view&id=1C1mROUeTyEOI5p2fIYJDJpHFvYzSIoXc"><img src="https://drive.google.com/uc?export=view&id=1C1mROUeTyEOI5p2fIYJDJpHFvYzSIoXc" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<a href="https://drive.google.com/uc?export=view&id=1C1mROUeTyEOI5p2fIYJDJpHFvYzSIoXc"><img src="https://drive.google.com/uc?export=view&id=1C1mROUeTyEOI5p2fIYJDJpHFvYzSIoXc" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 ```
 example("get_city_boundaries")
 ```
-<a href="https://drive.google.com/uc?export=view&id=1fz8Erp_4iHJpFdAeJk51S5bT5r0eEUkq"><img src="https://drive.google.com/uc?export=view&id=1fz8Erp_4iHJpFdAeJk51S5bT5r0eEUkq" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<a href="https://drive.google.com/uc?export=view&id=1fz8Erp_4iHJpFdAeJk51S5bT5r0eEUkq"><img src="https://drive.google.com/uc?export=view&id=1fz8Erp_4iHJpFdAeJk51S5bT5r0eEUkq" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 Cropping the built--up raster images according to the boundaries or buffer (circle or square) of relevant city;
 ```
 example("crop_raster_by_boundaries")
 ```
-<a href="https://drive.google.com/uc?export=view&id=1XKfGrANjIBErdsSJZ-gX65HcI5aLajIX"><img src="https://drive.google.com/uc?export=view&id=1XKfGrANjIBErdsSJZ-gX65HcI5aLajIX" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<a href="https://drive.google.com/uc?export=view&id=1XKfGrANjIBErdsSJZ-gX65HcI5aLajIX"><img src="https://drive.google.com/uc?export=view&id=1XKfGrANjIBErdsSJZ-gX65HcI5aLajIX" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 ```
 example("crop_raster_by_buffer")
 ```
-<a href="https://drive.google.com/uc?export=view&id=1Kz9atlKjQJwsmj5HeHo4873ymgrNxH4K"><img src="https://drive.google.com/uc?export=view&id=1Kz9atlKjQJwsmj5HeHo4873ymgrNxH4K" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<a href="https://drive.google.com/uc?export=view&id=1Kz9atlKjQJwsmj5HeHo4873ymgrNxH4K"><img src="https://drive.google.com/uc?export=view&id=1Kz9atlKjQJwsmj5HeHo4873ymgrNxH4K" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 Convert built-up raster image to dataframe to generate labels as characters;
 ```
@@ -48,24 +48,24 @@ Calling the road dataset from OSM to crop roads within the city;
 ```
 example("crop_city_roads")
 ```
-<a href="https://drive.google.com/uc?export=view&id=1pUb6OTzqexxwNK318_PwjnPi3e2N6sN9"><img src="https://drive.google.com/uc?export=view&id=1pUb6OTzqexxwNK318_PwjnPi3e2N6sN9" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=1ag2mE8VHN0TgzYs8oLvFVQVhNaD40c6e"><img src="https://drive.google.com/uc?export=view&id=1ag2mE8VHN0TgzYs8oLvFVQVhNaD40c6e" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<a href="https://drive.google.com/uc?export=view&id=1pUb6OTzqexxwNK318_PwjnPi3e2N6sN9"><img src="https://drive.google.com/uc?export=view&id=1pUb6OTzqexxwNK318_PwjnPi3e2N6sN9" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=1ag2mE8VHN0TgzYs8oLvFVQVhNaD40c6e"><img src="https://drive.google.com/uc?export=view&id=1ag2mE8VHN0TgzYs8oLvFVQVhNaD40c6e" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 Create a visual map and hexagon bining built-up denstiy map for relevant city;
 ```
 example("create_map")
 ```
-<a href="https://drive.google.com/uc?export=view&id=1qkWES7Re0k1tOxwGMOLEbzPf7Q4c4puL"><img src="https://drive.google.com/uc?export=view&id=1qkWES7Re0k1tOxwGMOLEbzPf7Q4c4puL" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=1tpILyP7NVhgLLhEfHGeOlj-mWKR5-TMX"><img src="https://drive.google.com/uc?export=view&id=1tpILyP7NVhgLLhEfHGeOlj-mWKR5-TMX" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<a href="https://drive.google.com/uc?export=view&id=1qkWES7Re0k1tOxwGMOLEbzPf7Q4c4puL"><img src="https://drive.google.com/uc?export=view&id=1qkWES7Re0k1tOxwGMOLEbzPf7Q4c4puL" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=1tpILyP7NVhgLLhEfHGeOlj-mWKR5-TMX"><img src="https://drive.google.com/uc?export=view&id=1tpILyP7NVhgLLhEfHGeOlj-mWKR5-TMX" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 ```
 example("hexbin_map")
 ```
-<a href="https://drive.google.com/uc?export=view&id=1TSmbA3UMQY6wIWtg8ubxEAxr4ojin3-l"><img src="https://drive.google.com/uc?export=view&id=1TSmbA3UMQY6wIWtg8ubxEAxr4ojin3-l" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=14Yctwqk_qYGOcWxMcbtVSjKiPGNaohAq"><img src="https://drive.google.com/uc?export=view&id=14Yctwqk_qYGOcWxMcbtVSjKiPGNaohAq" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<a href="https://drive.google.com/uc?export=view&id=1TSmbA3UMQY6wIWtg8ubxEAxr4ojin3-l"><img src="https://drive.google.com/uc?export=view&id=1TSmbA3UMQY6wIWtg8ubxEAxr4ojin3-l" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=14Yctwqk_qYGOcWxMcbtVSjKiPGNaohAq"><img src="https://drive.google.com/uc?export=view&id=14Yctwqk_qYGOcWxMcbtVSjKiPGNaohAq" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 Show all outputs on the dashboard and set the number of bin for hexagon_map;
 ```
 example("UrbanExpansionUI")
 ```
-<a href="https://drive.google.com/uc?export=view&id=1RvM3zY6sDTSrYhlFcIU-HFOXRGPKqsip"><img src="https://drive.google.com/uc?export=view&id=1RvM3zY6sDTSrYhlFcIU-HFOXRGPKqsip" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=1oSRcHbMv8RMpnNaJihNKHXZqJNPjSD0u"><img src="https://drive.google.com/uc?export=view&id=1oSRcHbMv8RMpnNaJihNKHXZqJNPjSD0u" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" /><a href="https://drive.google.com/uc?export=view&id=163DSrCCE7jc1GYt2yUFKRa7LMHNSaePC"><img src="https://drive.google.com/uc?export=view&id=163DSrCCE7jc1GYt2yUFKRa7LMHNSaePC" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=14E8MdrGHLHEEygalVT4VtU82KPo09d_y"><img src="https://drive.google.com/uc?export=view&id=14E8MdrGHLHEEygalVT4VtU82KPo09d_y" style="width: 300px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+<a href="https://drive.google.com/uc?export=view&id=1RvM3zY6sDTSrYhlFcIU-HFOXRGPKqsip"><img src="https://drive.google.com/uc?export=view&id=1RvM3zY6sDTSrYhlFcIU-HFOXRGPKqsip" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=1oSRcHbMv8RMpnNaJihNKHXZqJNPjSD0u"><img src="https://drive.google.com/uc?export=view&id=1oSRcHbMv8RMpnNaJihNKHXZqJNPjSD0u" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" /><a href="https://drive.google.com/uc?export=view&id=163DSrCCE7jc1GYt2yUFKRa7LMHNSaePC"><img src="https://drive.google.com/uc?export=view&id=163DSrCCE7jc1GYt2yUFKRa7LMHNSaePC" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=14E8MdrGHLHEEygalVT4VtU82KPo09d_y"><img src="https://drive.google.com/uc?export=view&id=14E8MdrGHLHEEygalVT4VtU82KPo09d_y" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 ### For Free Users:
 
