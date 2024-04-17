@@ -26,6 +26,7 @@ example("fetch_builtup_data")
 ```
 example("get_city_boundaries")
 ```
+<a href="https://drive.google.com/uc?export=view&id=1fz8Erp_4iHJpFdAeJk51S5bT5r0eEUkq"><img src="https://drive.google.com/uc?export=view&id=1fz8Erp_4iHJpFdAeJk51S5bT5r0eEUkq" style="width: 500px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 Cropping the built--up raster images according to the boundaries or buffer (circle or square) of relevant city;
 ```
