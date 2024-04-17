@@ -60,7 +60,8 @@ Please change the variables for your usage;
 
 ```
 url <- "https://glad.umd.edu/users/Potapov/GLCLUC2020/Built-up_change_2000_2020/"
-#If your city is in the intersection, you can type more than one tile name, the function will merge it for you. ex. c("50N_020E","50N_030E")
+#If your city is in the intersection, you can type more than one tile name, the function will merge it for you.
+#eg. c("50N_020E","50N_030E")
 lat_lon_list <- c("50N_020E")
 crsLONGLAT <- "+proj=longlat +ellps=WGS84 +towgs84=0,0,0,0,0,0,0 +no_defs"
 builtup_raster_data <- fetch_builtup_data(url, lat_lon_list, crsLONGLAT)
