@@ -27,8 +27,8 @@ dataset on a ggplot2 plot. The map is customized with specified title, caption, 
 to observe full size of the map.
 }
 \examples{
-city_map_buffer <- create_map(city_df_buffer, city_roads_inside_buffer, "Istanbul Urban Expansion","Created by <name>")
-city_map_boundaries <- create_map(city_df_boundaries, city_roads_inside_boundaries, "Istanbul Urban Expansion","Created by <name>")
+city_map_buffer <- create_map(city_df_buffer, city_roads_inside_buffer, "Istanbul Urban Expansion 2000-2020","Created by <name>")
+city_map_boundaries <- create_map(city_df_boundaries, city_roads_inside_boundaries, "Istanbul Urban Expansion 2000-2020","Created by <name>")
 
 #ggsave(
  # filename = "built_up.png",

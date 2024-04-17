@@ -15,8 +15,8 @@
 #' @export
 #'
 #' @examples
-#' city_map_buffer <- create_map(city_df_buffer, city_roads_inside_buffer, "Istanbul Urban Expansion","Created by <name>")
-#' city_map_boundaries <- create_map(city_df_boundaries, city_roads_inside_boundaries, "Istanbul Urban Expansion","Created by <name>")
+#' city_map_buffer <- create_map(city_df_buffer, city_roads_inside_buffer, "Istanbul Urban Expansion 2000-2020","Created by <name>")
+#' city_map_boundaries <- create_map(city_df_boundaries, city_roads_inside_boundaries, "Istanbul Urban Expansion 2000-2020","Created by <name>")
 #'
 #' #ggsave(
 #'  # filename = "built_up.png",
@@ -37,7 +37,7 @@ create_map <- function(raster_df, roads_cropped, title, caption) {
     ) +
     geom_sf(
       data = roads_cropped,
-      color = "#f5f0f0",
+      color = "#edebe4",
       size = 0.1,
       alpha = 0.5,
       fill = "transparent"

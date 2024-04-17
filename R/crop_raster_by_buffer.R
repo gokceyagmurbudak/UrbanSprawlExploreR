@@ -15,9 +15,9 @@
 #' @export
 #'
 #' @examples
-#' buffer_size <- 30
+#' buffer_size <- 15
 #' buffer_shape <- "square"
-#' crop_raster_by_buffer <- crop_raster_by_buffer(city_border_osm, buffer_size, buffer_shape, builtup_raster_data)
+#' crop_raster_buffer <- crop_raster_by_buffer(city_border_osm, buffer_size, buffer_shape, builtup_raster_data)
 
 
 crop_raster_by_buffer <- function(city_border, buffer_size_km, buffer_shape, builtup_raster_data) {

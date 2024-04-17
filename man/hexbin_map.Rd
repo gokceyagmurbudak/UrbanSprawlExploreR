@@ -25,6 +25,12 @@ It filters the dataframe to include only areas with a value of 1 (indicating new
 the density of these new buildings using hexagonal bins. The map is customized with the specified title and styling parameters.
 }
 \examples{
-hex_map_polygon <- hexbin_map(city_df_boundaries,15,"Building Desinty, Pixel-Based Analysis")
-hex_map_buffer <- hexbin_map(city_df_buffer,15,"Building Desinty, Pixel-Based Analysis")
+hex_map_polygon <- hexbin_map(city_df_boundaries,100,"Building Desinty, Pixel-Based Analysis")
+hex_map_buffer <- hexbin_map(city_df_buffer,100,"Building Desinty, Pixel-Based Analysis")
+
+#ggsave(
+#filename = "hex_map_polygon.png",
+#width = 6, height = 6, dpi = 600,
+#device = "png", hex_map_polygon #hex_map_buffer
+#)
 }

@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' crop_raster_by_boundaries<- crop_raster_by_boundaries(builtup_raster_data, city_border_osm)
+#' crop_raster_boundaries<- crop_raster_by_boundaries(builtup_raster_data, city_border_osm)
 
 crop_raster_by_boundaries <- function(raster_data, polygon_data) {
   terra::crs(raster_data) <- crsLONGLAT

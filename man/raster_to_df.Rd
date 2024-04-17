@@ -17,6 +17,6 @@ This function converts a raster (cropped raster by boundaries or buffer) data to
 }
 \examples{
 
-city_df_boundaries <- raster_to_df(crop_raster_by_boundaries)
-city_df_buffer <- raster_to_df(crop_raster_by_buffer$raster_masked)
+city_df_boundaries <- raster_to_df(crop_raster_boundaries)
+city_df_buffer <- raster_to_df(crop_raster_buffer$raster_masked)
 }
