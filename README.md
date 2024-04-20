@@ -1,7 +1,7 @@
 # UrbanSprawlExploreR
 
 This R package simplifies exploring urban sprawl using the [Global Land Cover and Land Use Change, 2000-2020 dataset](https://glad.umd.edu/dataset/GLCLUC2020) dataset.
-It can generate built-up change maps and new building density maps for your city of interest. In addition with interactive dashboard, you can visualise the results. Before you start using the package, check which tile your study area falls on with QGIS software [here](https://glad.umd.edu/users/Potapov/GLCLUC2020/10d_tiles.zip).
+It can generate built-up change maps and new building density maps for **your city of interest**. In addition with interactive dashboard, you can visualise the results. Before you start using the package, check which tile your study area falls on with QGIS software [here](https://glad.umd.edu/users/Potapov/GLCLUC2020/10d_tiles.zip).
 
 ### Install the library 
 
@@ -14,7 +14,7 @@ install_github("gokceyagmurbudak/UrbanSprawlExploreR")
 
 **Please run all functions in this order;**
 
-Calling library and dataset;
+Calling library and dataset. If your city is in the intersection, you can type more than one tile name, the function will merge it for you;
 ```
 library(UrbanSprawlExploreR)
 ```
