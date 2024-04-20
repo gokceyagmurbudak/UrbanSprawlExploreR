@@ -1,7 +1,7 @@
 # UrbanSprawlExploreR
 
 This R package simplifies exploring urban sprawl using the [Global Land Cover and Land Use Change, 2000-2020 dataset](https://glad.umd.edu/dataset/GLCLUC2020) dataset.
-It can generate built-up change maps and new building density maps for **your city of interest**. In addition with interactive dashboard, you can visualise the results. Before you start using the package, check which tile your study area falls on with QGIS software [here](https://glad.umd.edu/users/Potapov/GLCLUC2020/10d_tiles.zip).
+It can generate built-up change maps and hexagon new built-up density maps for **your city of interest**. In addition with interactive dashboard, you can visualise the results. Before you start using the package, check which tile your study area falls on with QGIS software [here](https://glad.umd.edu/users/Potapov/GLCLUC2020/10d_tiles.zip).
 
 ### Install the library 
 
@@ -50,7 +50,7 @@ example("crop_city_roads")
 ```
 <a href="https://drive.google.com/uc?export=view&id=1pUb6OTzqexxwNK318_PwjnPi3e2N6sN9"><img src="https://drive.google.com/uc?export=view&id=1pUb6OTzqexxwNK318_PwjnPi3e2N6sN9" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" /> <a href="https://drive.google.com/uc?export=view&id=1ag2mE8VHN0TgzYs8oLvFVQVhNaD40c6e"><img src="https://drive.google.com/uc?export=view&id=1ag2mE8VHN0TgzYs8oLvFVQVhNaD40c6e" style="width: 400px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
-Create a visual map and hexagon bining built-up denstiy map for relevant city;
+Create a visual map and hexagon bining new built-up denstiy map for relevant city;
 ```
 example("create_map")
 ```
