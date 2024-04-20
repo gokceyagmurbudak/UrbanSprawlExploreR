@@ -95,8 +95,6 @@ road_tags <- c("motorway", "trunk", "primary", "secondary",
                "tertiary", "motorway_link", "trunk_link",
                "primary_link", "secondary_link", "tertiary_link")
 
-#city_roads <- city_osm_roads(city_border_osm, road_tags, crsLONGLAT)
-
 city_roads_inside_buffer <- crop_city_roads(road_tags,crop_raster_buffer$buffer_polygon, crsLONGLAT)
 city_roads_inside_boundaries <- crop_city_roads(road_tags,city_border_osm,crsLONGLAT)
 
