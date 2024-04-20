@@ -117,5 +117,6 @@ UrbanExpansionUI(city_map_buffer,city_map_boundaries,city_df_buffer,city_df_boun
 *Note: Since UrbanSprawlExploreR utilizes server-based spatial data from the GLCLUC dataset and Osmdata rather than local data, the reliability and speed of your internet connection play a crucial role in the package's performance.*
 
 ### References
-[Hexagon Bining map](https://r-graph-gallery.com/329-hexbin-map-for-distribution.html)
-[Dashboard Structure](https://rstudio.github.io/shinydashboard/structure.html)
+*  [Hexagon Bining map](https://r-graph-gallery.com/329-hexbin-map-for-distribution.html)
+
+*  [Dashboard Structure](https://rstudio.github.io/shinydashboard/structure.html)
