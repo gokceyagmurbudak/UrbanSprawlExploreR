@@ -14,7 +14,7 @@ install_github("gokceyagmurbudak/UrbanSprawlExploreR")
 
 **Please run all functions in this order;**
 
-Calling library and dataset. If your city is in the intersection, you can type more than one tile name, the function will merge it for you;
+Calling library and dataset. If your city is in the intersection within the tiles, you can type more than one tile name, the function will merge it for you;
 ```
 library(UrbanSprawlExploreR)
 ```
